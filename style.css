@@ -129,11 +129,10 @@ main>section>.txt>p{
     text-align: justify;
     background-color: white;
     padding: 10px;
-    height: 7vh;
     border-radius: 0px 5px 5px 0px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.216);
 }
-main>section>.txt>#profile{
+main>section>#profile{
     padding: 10px;
     margin-top: -20px;
     margin-left: 5px;
@@ -282,7 +281,7 @@ main>section>.txt>#profile{
     vertical-align: middle;
 }
 
-    /* PROETOS */
+    /* PROJETOS */
     
 .card{
     margin: auto;
@@ -358,6 +357,17 @@ main>section>.txt>#profile{
     letter-spacing: 1px;
     color: white;
 }
+
+.lin{
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: whitesmoke;
+    padding: 0px 4px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.216);
+}
+
 
 /* FOOTER */
 
