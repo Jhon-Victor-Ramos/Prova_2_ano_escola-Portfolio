@@ -54,7 +54,7 @@ function alerta() {
 }
 function alerta2() {
     swal({
-        title: "Olá!",
+        title: "Oops!",
         text: "Você já está nesse site! Tente os outros",
         icon: "warning",
     });
