@@ -1,0 +1,406 @@
+@font-face {
+    font-family: 'Monument Extended';
+    src: url(font/MonumentExtended-Regular.otf) format('opentype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Berkshire Swash';
+    src: url(font/BerkshireSwash-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url(font/JosefinSans-BoldItalic.ttf) format('truetype');
+}
+:root{
+    --cor-fundo: #22d271;
+    --cor-fundo2: #1caf5e;
+    --cor-hover: #198549;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    height: 16vh;
+    width: 100%;
+    background-image: linear-gradient(180deg, var(--cor-fundo), var(--cor-fundo2));
+    text-align: center;
+}
+header>hr{
+    margin: auto;
+    width: 350px;
+    background-color: rgb(236, 236, 236);
+}
+header>h1{
+    padding: 10px;
+    padding-bottom: 5px;
+    font-family: 'Monument Extended';
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(224, 224, 224);
+}
+header>p{
+    padding: 10px;
+    font-family: 'Berkshire Swash';
+    letter-spacing: 1.5px;
+    font-size: 1em;
+    color: white;
+    text-shadow: 1px 1px 1px rgb(224, 224, 224);
+}
+
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+    background-color: var(--cor-fundo2);
+}
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+}
+.dp-menu ul li a{
+    font-family: 'Poppins';
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+    transition-duration: .5s;
+}
+
+.dp-menu ul li a:hover{
+    background-color: var(--cor-hover);
+    padding: 5px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+/* SUB MENU */
+
+.dp-menu ul ul{
+    display: none;
+    left: 0;
+    position: absolute;
+    border-radius: 0px 0px 5px 5px;
+    background-color: var(--cor-fundo2);
+}
+
+.dp-menu ul li:hover ul{
+    display: block;
+}
+.dp-menu ul ul li{
+    width: 200px;
+}
+.dp-menu ul ul li a{
+    display: block;
+}
+
+/* MAIN */
+
+.tpc{
+    width: 100%;
+    height: 6vh;
+    background-color: #0D522C;
+}
+
+main>section>.tpc>h2{
+    padding-top: 1.3vh;
+    font-family: 'Josefin Sans';
+    text-align: center;
+    color:white;
+    
+}main>section>hr{
+    margin: auto;
+    margin-top: 10px;
+    background-color: black;
+    width: 50%;
+}
+main>section>.txt{
+    display: flex;
+}
+main>section>.txt>p{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    margin: 10px 40px 10px 115px;
+    text-align: justify;
+    background-color: white;
+    padding: 10px;
+    height: 7vh;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.216);
+}
+main>section>.txt>#profile{
+    padding: 10px;
+    margin-top: -20px;
+    margin-left: 5px;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.216);
+    background-image: linear-gradient(45deg, #2A8FE89f, #2170b59f);
+}
+
+    /* CARDS */
+
+.container{
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    justify-items: center;
+    padding: 30px;
+}
+
+.card{
+    margin: auto;
+    background-color: white;
+    height: 45vh;
+    width: 40vh;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.216);
+}
+
+#css>.crdimg>.img{
+    padding: 10px 20px 5px 20px;
+}
+.card>.crdimg>img{
+    display: flex;
+    margin: auto;
+    height: 20vh;
+    margin-top: 25%;
+    padding-top: 10px;
+    transition: .5s;
+}
+.card:hover .img{
+    margin-top: -50px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 5px rgba(0, 0, 0, 0.216);
+}
+
+.conttxt{
+    display: none;
+}
+
+.card:hover .conttxt{
+    display: block;
+}
+
+#html5>h3{
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    text-align: center;
+}#html5>hr{
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    box-shadow: 0px 5px 10px 1px rgba(228, 76, 38, 0.432);
+}#html5>p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 20px;
+}
+
+#css3>h3{
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    text-align: center;
+}#css3>hr{
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    box-shadow: 0px 5px 10px 1px rgba(0, 187, 255, 0.216);
+}#css3>p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 20px;
+}
+
+#js>h3{
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    text-align: center;
+}#js>hr{
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    box-shadow: 0px 5px 10px 1px rgba(240, 189, 37, 0.764);
+}#js>p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin: 20px;
+}
+
+#python>.crdimg>.img{
+    padding: 10px 10px 0px 10px;
+}
+
+#python>h3{
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    text-align: center;
+}#python>hr{
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    box-shadow: 0px 5px 10px 1px rgba(240, 189, 37, 0.764);
+}#python>p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: small;
+    margin: 10px;
+}
+
+#php>h3{
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+    text-align: center;
+}#php>hr{
+    width: 50%;
+    margin: auto;
+    background-color: black;
+    box-shadow: 0px 5px 10px 1px rgba(120, 124, 180, 0.732);
+}#php>p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    font-size: small;
+    margin: 10px;
+}
+
+#soon{
+    background-color: rgb(202, 202, 202);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.216);
+    display: table;
+    text-align: center;
+}#soon>h3{
+    font-family: 'Poppins';
+    display: table-cell;
+    vertical-align: middle;
+}
+
+    /* PROETOS */
+    
+.card{
+    margin: auto;
+    background-color: white;
+    height: 50vh;
+    width: 40vh;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.216);
+}.card2{
+    border-radius: 5px;
+    margin: auto;
+    background-color: white;
+    height: 50vh;
+    width: 50vh;
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.216);
+}
+    
+.img2{
+    height: 25vh;
+    width: 100%;
+}
+#img3{
+    height: 15vh;
+    width: 100%;
+}
+
+
+.tltTOPc{
+    font-family: 'Poppins';
+    text-align: center;
+    color: black;
+}.tltTOPc>hr{
+    width: 70%;
+    margin: auto;
+    background-color: black;
+}.tltTOPc>p{
+    margin: 15px;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.btn{
+    width: 10vw;
+    height: 4vh;
+    margin: auto;
+    border-radius: 5px;
+    padding-top: 3px;
+    text-align: center;
+    background-color: rgb(224, 224, 224);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.216);
+    transition-duration: .3s;
+}.btn>a{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: black;
+}.btn:hover{
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    padding: 5px;
+    background-color: black;
+}.btn:hover a{
+    transition: .4s;
+    letter-spacing: 1px;
+    color: white;
+}.btn>span{
+    text-decoration: none;
+    font-family: 'Poppins';
+    font-weight: bold;
+    color: black;
+}.btn:hover span{
+    transition: .4s;
+    letter-spacing: 1px;
+    color: white;
+}
+
+/* FOOTER */
+
+.centro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    height: 20vh;
+    width: 100vw;
+    background-image: linear-gradient(360deg, var(--cor-fundo2), var(--cor-fundo));
+}
+footer>h3{
+    color: white;
+    text-align: center;
+    font-family: 'Monument Extended';
+    padding-top: 5px;
+}
+footer>hr{
+    background-color: #265239;
+    height: .2rem;
+    width: 25%;
+    margin: auto;
+    border: none;
+    box-shadow: 0px 2px 2px 1px rgba(13, 82, 44, 0.216);
+}
+.centro>ul>li{
+    padding-top: 5px;
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Poppins';
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+}.centro>ul>li>a{
+    color: white;
+    text-decoration: none;
+    transition-duration: .3s;
+}.centro>ul>li>a:hover{
+    transition: .4s;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #0D522C;
+}
