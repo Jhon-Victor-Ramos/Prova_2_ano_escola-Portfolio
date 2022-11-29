@@ -46,16 +46,16 @@ function smoothScrollTo(endX, endY, duration) {
 // ALERT
 
 function alerta() {
-    swal({
-        title: "Olá!",
-        text: "Este site não está disponivel no momento! Tente os outros",
-        icon: "error",
-    });
+  swal({
+      title: "Olá!",
+      text: "Este site não está disponivel no momento! Tente os outros",
+      icon: "error",
+  });
 }
 function alerta2() {
-    swal({
-        title: "Oops!",
-        text: "Você já está nesse site! Tente os outros",
-        icon: "warning",
-    });
+  swal({
+      title: "Oops!",
+      text: "Você já está nesse site! Tente os outros",
+      icon: "warning",
+  });
 }
