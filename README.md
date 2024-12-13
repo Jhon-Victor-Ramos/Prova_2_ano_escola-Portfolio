@@ -1,7 +1,8 @@
-# PROVAS DA ESCOLA
- Algumas provas da escola
+<h1 align="center">
+Prova da Escola
+</h1>
 
-Estou aprendendo a criar sites :)
+> Repositório criado a pedido do professor para upar o arquivo da prova que o objetivo é desenvolver um portfólio criado em HTML, CSS e JavaScript
 
-<p>]=-+-+-=[ Prova 27/11 - (Portfólio): ]=-+-+-=[</p>
-<a href="https://jhon-victor-ramos.github.io/Provas/">--[ EXECUTAR A PROVA 27/11 - (Portfólio) ]--</a><br><br>
+### **Prova 27/11 - (Portfólio):**
+* <a href="https://jhon-victor-ramos.github.io/Provas/" target="_blank">PROVA 27/11 - (Portfólio)</a>
